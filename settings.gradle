@@ -14,4 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "FirstKotlin"
 include ':app'
-include ':viewtest'
