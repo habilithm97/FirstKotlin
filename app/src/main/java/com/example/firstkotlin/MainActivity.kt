@@ -8,11 +8,17 @@ import com.example.firstkotlin.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btn.setOnClickListener {
             val intent = Intent(this, StopWatch::class.java)
+            startActivity(intent)
+        }
+
+        binding.btn1.setOnClickListener {
+            val intent = Intent(this, ResTest::class.java)
             startActivity(intent)
         }
     }

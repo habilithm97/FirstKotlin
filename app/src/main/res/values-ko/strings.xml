@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FirstKotlin</string>
+
+    <string name="password_check">회원님의 소중한 정보 보호를 위해, 카카오 계정의 현재 비밀번호를 확인해 주세요.</string>
+    <string name="password_forget">비밀번호가 기억나지 않으세요?</string>
+
+    <string name="main_tv">Messenger에서 휴대폰 연락처에 있는 사람들을 찾아보세요</string>
+    <string name="sub_tv">연락처를 계속 업로드하면 Facebook 및 Messenger에서 연결된 연락처를
+    추천하고 회원님과 다른 사람들에게 더욱 관련성 높은 광고를 표시하여 더 나은 서비스를 제공하는데 도움이 됩니다.</string>
+    <string name="set_up_btn">설정</string>
+    <string name="not_now_tv">나중에 하기</string>
+</resources>
