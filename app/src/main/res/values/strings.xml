@@ -9,4 +9,8 @@
     suggest connections and provide and improve ads for you and others, and offer a better service.</string>
     <string name="set_up_btn">TRUN ON</string>
     <string name="not_now_tv">NOT NOW</string>
+
+    <string name="drawer_opend">Opend Drawer</string>
+    <string name="drawer_closed">Closed Drawer</string>
+    <string name="item">Item</string>
 </resources>

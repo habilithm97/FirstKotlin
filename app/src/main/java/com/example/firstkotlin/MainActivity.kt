@@ -21,5 +21,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ResTest::class.java)
             startActivity(intent)
         }
+
+        binding.btn2.setOnClickListener {
+            val intent = Intent(this, JetpackTest::class.java)
+            startActivity(intent)
+        }
     }
 }

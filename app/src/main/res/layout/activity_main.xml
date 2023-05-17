@@ -24,4 +24,14 @@
         android:text="리소스 테스트 액티비티"
         android:background="@drawable/round_button"/>
 
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="제트팩 테스트 액티비티"
+        android:background="@drawable/round_button"/>
+
 </LinearLayout>
