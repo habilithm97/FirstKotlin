@@ -1,10 +1,15 @@
 package com.example.firstkotlin
 
+import android.content.Context
+import android.graphics.BitmapFactory
+import android.graphics.Canvas
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.firstkotlin.databinding.Fragment1Binding
@@ -28,7 +33,6 @@ class ItemAdapter(val items : MutableList<String>) :
         val binding = (holder as ViewHolder).binding
         binding.tv.text = items[position]
     }
-
 }
 class Fragment1 : Fragment() {
 
@@ -48,7 +52,36 @@ class Fragment1 : Fragment() {
 
         val adapter = ItemAdapter(items)
         binding.recyclerView.adapter = adapter
+        binding.recyclerView.addItemDecoration(ItemDecoration(activity as Context))
 
         return binding.root
+    }
+
+    class ItemDecoration(val context: Context) : RecyclerView.ItemDecoration() {
+        override fun onDrawOver(c: Canvas, parent: RecyclerView, state: RecyclerView.State) {
+            super.onDrawOver(c, parent, state)
+
+            // 뷰 크기 계산
+            val width = parent.width
+            val height = parent.height
+
+            // 이미지 크기 계산
+            val drawable: Drawable? = ResourcesCompat.getDrawable(context.getResources(),
+                R.drawable.kbo, null)
+            val drWidth = drawable?.intrinsicWidth
+            val drHeight = drawable?.intrinsicHeight
+
+            // 이미지를 출력할 위치 계산
+            val left = width/2 - drWidth?.div(2) as Int
+            val top = height/2 - drHeight?.div(2) as Int
+
+            // 이미지 출력
+            c.drawBitmap(
+                BitmapFactory.decodeResource(context.getResources(), R.drawable.kbo),
+                left.toFloat(),
+                top.toFloat(),
+                null
+            )
+        }
     }
 }
