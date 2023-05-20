@@ -9,9 +9,10 @@ import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.firstkotlin.databinding.ActivityJetpackTestBinding
+import com.example.firstkotlin.databinding.ActivityJetpackMaterialTestBinding
+import com.google.android.material.tabs.TabLayoutMediator
 
-class JetpackTest : AppCompatActivity() {
+class JetpackMaterialTest : AppCompatActivity() {
     lateinit var drawerToggle: ActionBarDrawerToggle
 
     class ViewPagerAdapter(activity: FragmentActivity) :
@@ -26,16 +27,20 @@ class JetpackTest : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityJetpackTestBinding.inflate(layoutInflater)
+        val binding = ActivityJetpackMaterialTestBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolBar)
         drawerToggle = ActionBarDrawerToggle(this, binding.drawer, R.string.drawer_opend, R.string.drawer_closed)
         supportActionBar?.setDisplayHomeAsUpEnabled(true) // 뒤로가기 버튼 추가
-        drawerToggle.syncState()
+        drawerToggle.syncState() // 드로어를 열기 위한 햄버거 메뉴 아이콘
 
         val adapter = ViewPagerAdapter(this)
         binding.viewPager.adapter = adapter
+
+        // TabLayout과 ViewPager2 연동
+        TabLayoutMediator(binding.tabs, binding.viewPager)
+        { tab, position -> tab.text = "Tab${(position + 1)}"}.attach()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

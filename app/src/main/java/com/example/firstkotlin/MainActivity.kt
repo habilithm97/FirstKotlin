@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btn2.setOnClickListener {
-            val intent = Intent(this, JetpackTest::class.java)
+            val intent = Intent(this, JetpackMaterialTest::class.java)
             startActivity(intent)
         }
     }

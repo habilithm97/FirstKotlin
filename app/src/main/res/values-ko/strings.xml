@@ -13,5 +13,11 @@
 
     <string name="drawer_opend">드로어 오픈</string>
     <string name="drawer_closed">드로어 닫음</string>
-    <string name="item">번째 아이템</string>
+
+    <string name="material_test">머티리얼 테스트</string>
+    <string name="extended_btn">확장 버튼</string>
+    <string name="navi">내비게이션</string>
+    <string name="navi_item">아이템1</string>
+    <string name="navi_item1">아이템2</string>
+    <string name="navi_item2">아이템3</string>
 </resources>

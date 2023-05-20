@@ -31,7 +31,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:text="제트팩 테스트 액티비티"
+        android:text="제트팩/머티리얼 테스트 액티비티"
         android:background="@drawable/round_button"/>
 
 </LinearLayout>

@@ -58,6 +58,7 @@ class Fragment1 : Fragment() {
     }
 
     class ItemDecoration(val context: Context) : RecyclerView.ItemDecoration() {
+        // 항목이 모두 배치된 후에 호출됨
         override fun onDrawOver(c: Canvas, parent: RecyclerView, state: RecyclerView.State) {
             super.onDrawOver(c, parent, state)
 
