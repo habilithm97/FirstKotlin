@@ -22,7 +22,7 @@
                 android:layout_height="250dp"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 app:contentScrim="?attr/colorPrimary"
-                app:title="@string/material_test"
+                app:title="머티리얼 테스트"
                 app:expandedTitleMarginStart="50dp"
                 app:expandedTitleMarginBottom="50dp">
 
@@ -66,7 +66,7 @@
             android:layout_margin="10dp"
             app:layout_anchor="@id/viewPager"
             app:layout_anchorGravity="bottom|right"
-            android:text="@string/extended_btn"
+            android:text="확장 버튼"
             app:icon="@drawable/add"/>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

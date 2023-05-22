@@ -5,17 +5,17 @@ import android.os.Bundle
 import android.os.SystemClock
 import android.view.KeyEvent
 import android.widget.Toast
-import com.example.firstkotlin.databinding.ActivityStopWatchBinding
+import com.example.firstkotlin.databinding.ActivityStopWatchTestBinding
 
-class StopWatch : AppCompatActivity() {
+class StopWatchTest : AppCompatActivity() {
 
-    var pauseTime = 0L // 멈춘 시간을 저장함
-    var initTime = 0L // 뒤로가기 버튼을 누른 시간을 저장함
+    var pauseTime = 0L // 멈춘 시간을 저장
+    var backTime = 0L // 뒤로가기 버튼을 누른 시간을 저장
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val binding = ActivityStopWatchBinding.inflate(layoutInflater)
+        val binding = ActivityStopWatchTestBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.startBtn.setOnClickListener {
@@ -24,18 +24,18 @@ class StopWatch : AppCompatActivity() {
             binding.chronometer.base = SystemClock.elapsedRealtime() + pauseTime
             binding.chronometer.start()
 
+            binding.startBtn.isEnabled = false
             binding.stopBtn.isEnabled = true
             binding.resetBtn.isEnabled = true
-            binding.startBtn.isEnabled = false
         }
 
         binding.stopBtn.setOnClickListener {
             pauseTime = binding.chronometer.base - SystemClock.elapsedRealtime()
             binding.chronometer.stop()
 
+            binding.startBtn.isEnabled = true
             binding.stopBtn.isEnabled = false
             binding.resetBtn.isEnabled = true
-            binding.startBtn.isEnabled = true
         }
 
         binding.resetBtn.setOnClickListener {
@@ -43,20 +43,19 @@ class StopWatch : AppCompatActivity() {
             binding.chronometer.base = SystemClock.elapsedRealtime()
             binding.chronometer.stop()
 
+            binding.startBtn.isEnabled = true
             binding.stopBtn.isEnabled = false
             binding.resetBtn.isEnabled = false
-            binding.startBtn.isEnabled = true
         }
     }
 
-    // 뒤로가기 이벤트 핸들러
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
         // 뒤로가기 버튼을 눌렀을 때
         if(keyCode === KeyEvent.KEYCODE_BACK) {
             // 뒤로가기 버튼을 처음 눌렀거나 누른지 3초가 지났을 때
-            if(System.currentTimeMillis() - initTime > 3000) {
+            if(System.currentTimeMillis() - backTime > 3000) {
                 Toast.makeText(this, "종료하려면 한 번 더 누르세요. ", Toast.LENGTH_SHORT).show()
-                initTime = System.currentTimeMillis()
+                backTime = System.currentTimeMillis()
                 return true
             }
         }

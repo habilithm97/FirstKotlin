@@ -26,7 +26,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".StopWatch"
+            android:name=".StopWatchTest"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

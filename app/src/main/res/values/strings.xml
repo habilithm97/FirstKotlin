@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">FirstKotlin</string>
 
-    <string name="password_check">To protect your valuable information, please check the current password of your Kakao account.</string>
-    <string name="password_forget">Don\'t you remember the password?</string>
+    <string name="pw_check">To protect your valuable information, please check the current password of your Kakao account.</string>
+    <string name="pw_forget">Don\'t you remember the password?</string>
 
     <string name="main_tv">Find your phone contacts on Messenger</string>
     <string name="sub_tv">Continuously uploading your contacts helps Facebook and Messenger
@@ -10,13 +10,6 @@
     <string name="set_up_btn">TRUN ON</string>
     <string name="not_now_tv">NOT NOW</string>
 
-    <string name="drawer_opend">Opend Drawer</string>
-    <string name="drawer_closed">Closed Drawer</string>
-
-    <string name="material_test">Material Test</string>
-    <string name="extended_btn">Extended Button</string>
-    <string name="navi">Navigation</string>
-    <string name="navi_item">Item1</string>
-    <string name="navi_item1">Item2</string>
-    <string name="navi_item2">Item3</string>
+    <string name="drawer_opened">Drawer Open</string>
+    <string name="drawer_closed">Drawer Close</string>
 </resources>

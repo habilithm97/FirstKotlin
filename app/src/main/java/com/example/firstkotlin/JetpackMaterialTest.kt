@@ -31,9 +31,9 @@ class JetpackMaterialTest : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolBar)
-        drawerToggle = ActionBarDrawerToggle(this, binding.drawer, R.string.drawer_opend, R.string.drawer_closed)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true) // 뒤로가기 버튼 추가
-        drawerToggle.syncState() // 드로어를 열기 위한 햄버거 메뉴 아이콘
+        drawerToggle = ActionBarDrawerToggle(this, binding.drawer, R.string.drawer_opened, R.string.drawer_closed)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true) // 토글 버튼으로 사용할 아이콘 출력
+        drawerToggle.syncState() // 토글 버튼을 햄버거 아이콘으로
 
         val adapter = ViewPagerAdapter(this)
         binding.viewPager.adapter = adapter

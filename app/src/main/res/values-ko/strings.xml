@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name">FirstKotlin</string>
 
-    <string name="password_check">회원님의 소중한 정보 보호를 위해, 카카오 계정의 현재 비밀번호를 확인해 주세요.</string>
-    <string name="password_forget">비밀번호가 기억나지 않으세요?</string>
+    <string name="pw_check">회원님의 소중한 정보 보호를 위해, 카카오 계정의 현재 비밀번호를 확인해 주세요.</string>
+    <string name="pw_forget">비밀번호가 기억나지 않으세요?</string>
 
     <string name="main_tv">Messenger에서 휴대폰 연락처에 있는 사람들을 찾아보세요</string>
     <string name="sub_tv">연락처를 계속 업로드하면 Facebook 및 Messenger에서 연결된 연락처를
@@ -11,13 +11,6 @@
     <string name="set_up_btn">설정</string>
     <string name="not_now_tv">나중에 하기</string>
 
-    <string name="drawer_opend">드로어 오픈</string>
+    <string name="drawer_opened">드로어 오픈</string>
     <string name="drawer_closed">드로어 닫음</string>
-
-    <string name="material_test">머티리얼 테스트</string>
-    <string name="extended_btn">확장 버튼</string>
-    <string name="navi">내비게이션</string>
-    <string name="navi_item">아이템1</string>
-    <string name="navi_item1">아이템2</string>
-    <string name="navi_item2">아이템3</string>
 </resources>

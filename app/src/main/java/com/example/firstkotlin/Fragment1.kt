@@ -25,8 +25,7 @@ class ItemAdapter(val items : MutableList<String>) :
         return items.size
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
-            RecyclerView.ViewHolder =
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder =
         ViewHolder(ItemMainBinding.inflate(LayoutInflater.from(parent.context), parent, false))
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
@@ -35,7 +34,6 @@ class ItemAdapter(val items : MutableList<String>) :
     }
 }
 class Fragment1 : Fragment() {
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

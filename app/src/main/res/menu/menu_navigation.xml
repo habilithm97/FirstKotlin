@@ -3,13 +3,13 @@
 
     <item
         android:icon="@drawable/add"
-        android:title="@string/navi_item"/>
+        android:title="아이템1"/>
 
     <item
         android:icon="@drawable/back"
-        android:title="@string/navi_item1"/>
+        android:title="아이템2"/>
 
     <item
         android:icon="@drawable/video"
-        android:title="@string/navi_item2"/>
+        android:title="아이템3"/>
 </menu>

@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btn.setOnClickListener {
-            val intent = Intent(this, StopWatch::class.java)
+            val intent = Intent(this, StopWatchTest::class.java)
             startActivity(intent)
         }
 
