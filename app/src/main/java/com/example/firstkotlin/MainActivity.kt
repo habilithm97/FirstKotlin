@@ -26,5 +26,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, JetpackMaterialTest::class.java)
             startActivity(intent)
         }
+
+        binding.btn3.setOnClickListener {
+            val intent = Intent(this, TodoListTest::class.java)
+            startActivity(intent)
+        }
     }
 }

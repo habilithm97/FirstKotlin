@@ -12,6 +12,20 @@
         android:theme="@style/Theme.FirstKotlin"
         tools:targetApi="31">
         <activity
+            android:name=".AddActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TodoListTest"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".JetpackMaterialTest"
             android:exported="false">
             <meta-data
