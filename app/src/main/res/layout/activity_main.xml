@@ -12,7 +12,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:text="스톱워치 테스트 액티비티"
+        android:text="이벤트 테스트 액티비티"
         android:background="@drawable/round_button"/>
 
     <Button
@@ -42,8 +42,17 @@
         android:layout_marginTop="5dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:text="할 일 목록 테스트 액티비티"
+        android:text="액티비티 테스트 액티비티"
         android:background="@drawable/round_button"/>
 
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="브로드캐스트 리시버 테스트 액티비티"
+        android:background="@drawable/round_button"/>
 
 </LinearLayout>

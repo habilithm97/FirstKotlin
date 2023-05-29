@@ -1,4 +1,4 @@
-package com.example.firstkotlin
+package com.example.firstkotlin.activity
 
 import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity

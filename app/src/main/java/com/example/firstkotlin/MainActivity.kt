@@ -3,17 +3,21 @@ package com.example.firstkotlin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.firstkotlin.activity.ActivityTest
+import com.example.firstkotlin.brodcastreceiver.ReceiverTest
 import com.example.firstkotlin.databinding.ActivityMainBinding
+import com.example.firstkotlin.event.EventTest
+import com.example.firstkotlin.jetpackmaterial.JetpackMaterialTest
+import com.example.firstkotlin.res.ResTest
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btn.setOnClickListener {
-            val intent = Intent(this, StopWatchTest::class.java)
+            val intent = Intent(this, EventTest::class.java)
             startActivity(intent)
         }
 
@@ -28,7 +32,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btn3.setOnClickListener {
-            val intent = Intent(this, TodoListTest::class.java)
+            val intent = Intent(this, ActivityTest::class.java)
+            startActivity(intent)
+        }
+
+        binding.btn4.setOnClickListener {
+            val intent = Intent(this, ReceiverTest::class.java)
             startActivity(intent)
         }
     }
